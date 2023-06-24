@@ -33,12 +33,15 @@ jobs:
     - run: |
     
         mkdir test_build
+        
+        cd test_build
 
         chmod +x ./gradlew
 
         ./gradlew assembleRelease
-    - run: |
-        cd test_build
+        
+        cd ..
+    
     - uses: actions/upload-artifact@v3
 
       with:
