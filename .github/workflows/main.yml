@@ -37,7 +37,8 @@ jobs:
         chmod +x ./gradlew
 
         ./gradlew assembleRelease
-
+    - run: |
+        cd test_build
     - uses: actions/upload-artifact@v3
 
       with:
