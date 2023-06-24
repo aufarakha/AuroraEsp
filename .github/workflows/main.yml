@@ -34,6 +34,7 @@ jobs:
     
         mkdir test_build
         
+        mv * test_build
         cd test_build
 
         chmod +x ./gradlew
