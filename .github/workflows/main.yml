@@ -31,6 +31,8 @@ jobs:
         cache: gradle
 
     - run: |
+    
+        mkdir test_build
 
         chmod +x ./gradlew
 
@@ -42,4 +44,4 @@ jobs:
 
         name: wflow-test
 
-        path: out/test_build/
+        path: test_build
