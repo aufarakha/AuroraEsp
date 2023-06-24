@@ -42,6 +42,6 @@ jobs:
 
       with:
 
-        name: wflow-test
+        name: auroraesp
 
         path: test_build
