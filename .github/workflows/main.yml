@@ -34,17 +34,12 @@ jobs:
     
         mkdir test_build
         
-        shopt -s extglob
         
-        mv !(test_build) test_build
-        
-        cd test_build
-
         chmod +x ./gradlew
 
         ./gradlew assembleRelease
+        mv app/build/outputs/apk/release/*.apk
         
-        cd ..
     
     - uses: actions/upload-artifact@v3
 
