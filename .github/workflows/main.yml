@@ -34,7 +34,9 @@ jobs:
     
         mkdir test_build
         
-        mv * test_build
+        shopt -s extglob
+        
+        mv !(test_build) test_build
         
         cd test_build
 
